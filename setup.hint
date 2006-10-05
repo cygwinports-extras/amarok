@@ -1,0 +1,4 @@
+category: Audio KDE
+requires: cygwin glib2 gtk+ kdelibs4 libgpod0 libmp4v2_0 sqlite3 taglib xine-lib
+sdesc: "KDE music player"
+ldesc: "KDE music player"

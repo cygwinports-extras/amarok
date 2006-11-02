@@ -3,28 +3,29 @@ amarok
 KDE music player
 
 Runtime requirements:
-  cygwin-1.5.21-1
+  cygwin-1.5.21-2
   glib2-2.10.3-1
   gtk+-1.2.10-2
-  kdelibs4-3.5.3-1
+  kdelibs4-3.5.4-1
   libgpod0-0.3.2-1
   libmp4v2_0-2.0-2
-  sqlite3-3.3.5-1
+  libsqlite3_0-3.3.7-1
+  libtunepimp5-0.5.0-1
+  libxine1-1.1.2-1
   taglib-1.4-1
-  xine-lib-1.1.1-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.21-1
+  cygwin-1.5.21-2
   autoconf2.5-2.59-2
   automake1.9-1.9.6-1
   binutils-20060709-1
-  cygport-0.2.4-1
+  cygport-0.2.5-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
   gcc-g++-3.4.4-1
   libtool1.5-1.5.22-1
-  make-3.80-1
+  make-3.81-1
   perl-5.8.7-5
   sed-4.1.5-1
 
@@ -53,16 +54,26 @@ Files included in the binary package:
 
   /etc/postinstall/amarok.sh
   /usr/bin/amarok.exe
+  /usr/bin/amarok_daapserver.rb
   /usr/bin/amarok_proxy.rb
+  /usr/bin/amarok_xmmswrapper2.exe
   /usr/bin/amarokapp.exe
   /usr/bin/amarokcollectionscanner.exe
   /usr/bin/cygamarok-0.dll
+  /usr/lib/kde3/cygamarok_daap-mediadevice.dll
   /usr/lib/kde3/cygamarok_generic-mediadevice.dll
   /usr/lib/kde3/cygamarok_ipod-mediadevice.dll
+  /usr/lib/kde3/cygamarok_massstorage-device.dll
+  /usr/lib/kde3/cygamarok_nfs-device.dll
+  /usr/lib/kde3/cygamarok_smb-device.dll
   /usr/lib/kde3/cygamarok_void-engine_plugin.dll
   /usr/lib/kde3/cygamarok_xine-engine.dll
+  /usr/lib/kde3/libamarok_daap-mediadevice.la
   /usr/lib/kde3/libamarok_generic-mediadevice.la
   /usr/lib/kde3/libamarok_ipod-mediadevice.la
+  /usr/lib/kde3/libamarok_massstorage-device.la
+  /usr/lib/kde3/libamarok_nfs-device.la
+  /usr/lib/kde3/libamarok_smb-device.la
   /usr/lib/kde3/libamarok_void-engine_plugin.la
   /usr/lib/kde3/libamarok_xine-engine.la
   /usr/lib/libamarok.dll.a
@@ -456,7 +467,6 @@ Files included in the binary package:
   /usr/share/apps/amarok/images/lastfm.png
   /usr/share/apps/amarok/images/loading1.png
   /usr/share/apps/amarok/images/loading2.png
-  /usr/share/apps/amarok/images/logo_web.png
   /usr/share/apps/amarok/images/menu_sidepixmap.png
   /usr/share/apps/amarok/images/more_albums.png
   /usr/share/apps/amarok/images/musicbrainz.png
@@ -478,6 +488,49 @@ Files included in the binary package:
   /usr/share/apps/amarok/images/wizard_compact.png
   /usr/share/apps/amarok/images/wizard_xmms.png
   /usr/share/apps/amarok/images/xine_logo.png
+  /usr/share/apps/amarok/ruby_lib/codes.rb
+  /usr/share/apps/amarok/ruby_lib/gemconfigure.rb
+  /usr/share/apps/amarok/ruby_lib/http11.rb
+  /usr/share/apps/amarok/ruby_lib/libhttp11.a
+  /usr/share/apps/amarok/ruby_lib/libhttp11.la
+  /usr/share/apps/amarok/ruby_lib/mongrel.rb
+  /usr/share/apps/amarok/ruby_lib/mongrel/cgi.rb
+  /usr/share/apps/amarok/ruby_lib/mongrel/command.rb
+  /usr/share/apps/amarok/ruby_lib/mongrel/configurator.rb
+  /usr/share/apps/amarok/ruby_lib/mongrel/debug.rb
+  /usr/share/apps/amarok/ruby_lib/mongrel/handlers.rb
+  /usr/share/apps/amarok/ruby_lib/mongrel/init.rb
+  /usr/share/apps/amarok/ruby_lib/mongrel/stats.rb
+  /usr/share/apps/amarok/ruby_lib/mongrel/tcphack.rb
+  /usr/share/apps/amarok/ruby_lib/rbconfig/datadir.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/._gem_commands.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/builder.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/cmd_manager.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/command.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/config_file.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/custom_require.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/dependency_list.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/doc_manager.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/format.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/gem_commands.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/gem_openssl.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/gem_runner.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/incremental_fetcher.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/installer.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/loadpath_manager.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/old_format.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/open-uri.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/package.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/remote_installer.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/rubygems_version.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/security.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/source_index.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/specification.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/timer.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/user_interaction.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/validator.rb
+  /usr/share/apps/amarok/ruby_lib/rubygems/version.rb
   /usr/share/apps/amarok/scripts/common/Publisher.py
   /usr/share/apps/amarok/scripts/common/Zeroconf.py
   /usr/share/apps/amarok/scripts/lyrics_astraweb/COPYING
@@ -533,7 +586,7 @@ Files included in the binary package:
   /usr/share/config.kcfg/amarok.kcfg
   /usr/share/config.kcfg/xinecfg.kcfg
   /usr/share/config/amarokrc
-  /usr/share/doc/Cygwin/amarok-1.4.1.README
+  /usr/share/doc/Cygwin/amarok-1.4.3.README
   /usr/share/doc/HTML/da/amarok/advanced.docbook
   /usr/share/doc/HTML/da/amarok/common
   /usr/share/doc/HTML/da/amarok/config.docbook
@@ -630,7 +683,10 @@ Files included in the binary package:
   /usr/share/doc/HTML/en/amarok/tab_wiki.png
   /usr/share/doc/HTML/en/amarok/using.docbook
   /usr/share/doc/HTML/en/amarok/vis_window.png
+  /usr/share/doc/HTML/es/amarok/add_dynamic.png
+  /usr/share/doc/HTML/es/amarok/amarok_playlist.png
   /usr/share/doc/HTML/es/amarok/analyzer.png
+  /usr/share/doc/HTML/es/amarok/browser_choice.png
   /usr/share/doc/HTML/es/amarok/buttons.png
   /usr/share/doc/HTML/es/amarok/collection.png
   /usr/share/doc/HTML/es/amarok/config_appearance.png
@@ -642,8 +698,10 @@ Files included in the binary package:
   /usr/share/doc/HTML/es/amarok/config_scrobbler.png
   /usr/share/doc/HTML/es/amarok/context.png
   /usr/share/doc/HTML/es/amarok/coverman.png
+  /usr/share/doc/HTML/es/amarok/dynamic_bar.png
   /usr/share/doc/HTML/es/amarok/dynamic_mode1.png
   /usr/share/doc/HTML/es/amarok/dynamic_mode2.png
+  /usr/share/doc/HTML/es/amarok/dynamic_settings.png
   /usr/share/doc/HTML/es/amarok/equalizer.png
   /usr/share/doc/HTML/es/amarok/file_browser.png
   /usr/share/doc/HTML/es/amarok/logo.png
@@ -654,12 +712,16 @@ Files included in the binary package:
   /usr/share/doc/HTML/es/amarok/pl_tip1.png
   /usr/share/doc/HTML/es/amarok/play_list.png
   /usr/share/doc/HTML/es/amarok/player_window.png
+  /usr/share/doc/HTML/es/amarok/playlist_browser.png
   /usr/share/doc/HTML/es/amarok/playlist_window.png
   /usr/share/doc/HTML/es/amarok/queue_manager.png
   /usr/share/doc/HTML/es/amarok/quick.docbook
   /usr/share/doc/HTML/es/amarok/rmb_menu.png
   /usr/share/doc/HTML/es/amarok/script_manager.png
   /usr/share/doc/HTML/es/amarok/status_bar.png
+  /usr/share/doc/HTML/es/amarok/tab_lyrics.png
+  /usr/share/doc/HTML/es/amarok/tab_music.png
+  /usr/share/doc/HTML/es/amarok/tab_wiki.png
   /usr/share/doc/HTML/es/amarok/vis_window.png
   /usr/share/doc/HTML/et/amarok/advanced.docbook
   /usr/share/doc/HTML/et/amarok/common
@@ -720,6 +782,7 @@ Files included in the binary package:
   /usr/share/doc/HTML/it/amarok/play_list.png
   /usr/share/doc/HTML/it/amarok/player_window.png
   /usr/share/doc/HTML/it/amarok/playlist_browser.png
+  /usr/share/doc/HTML/it/amarok/playlist_window.png
   /usr/share/doc/HTML/it/amarok/plugin.docbook
   /usr/share/doc/HTML/it/amarok/queue_manager.png
   /usr/share/doc/HTML/it/amarok/quick.docbook
@@ -727,9 +790,14 @@ Files included in the binary package:
   /usr/share/doc/HTML/it/amarok/rmb_menu.png
   /usr/share/doc/HTML/it/amarok/script_manager.png
   /usr/share/doc/HTML/it/amarok/status_bar.png
+  /usr/share/doc/HTML/it/amarok/tab_lyrics.png
+  /usr/share/doc/HTML/it/amarok/tab_music.png
+  /usr/share/doc/HTML/it/amarok/tab_wiki.png
   /usr/share/doc/HTML/it/amarok/using.docbook
   /usr/share/doc/HTML/it/amarok/vis_window.png
+  /usr/share/doc/HTML/nl/amarok/add_dynamic.png
   /usr/share/doc/HTML/nl/amarok/advanced.docbook
+  /usr/share/doc/HTML/nl/amarok/amarok_playlist.png
   /usr/share/doc/HTML/nl/amarok/analyzer.png
   /usr/share/doc/HTML/nl/amarok/buttons.png
   /usr/share/doc/HTML/nl/amarok/collection.png
@@ -737,9 +805,7 @@ Files included in the binary package:
   /usr/share/doc/HTML/nl/amarok/config.docbook
   /usr/share/doc/HTML/nl/amarok/config_appearance.png
   /usr/share/doc/HTML/nl/amarok/config_collection.png
-  /usr/share/doc/HTML/nl/amarok/config_colors.png
   /usr/share/doc/HTML/nl/amarok/config_engine.png
-  /usr/share/doc/HTML/nl/amarok/config_fonts.png
   /usr/share/doc/HTML/nl/amarok/config_general.png
   /usr/share/doc/HTML/nl/amarok/config_osd.png
   /usr/share/doc/HTML/nl/amarok/config_playback.png
@@ -747,6 +813,7 @@ Files included in the binary package:
   /usr/share/doc/HTML/nl/amarok/context.png
   /usr/share/doc/HTML/nl/amarok/coverman.png
   /usr/share/doc/HTML/nl/amarok/develop.docbook
+  /usr/share/doc/HTML/nl/amarok/dynamic_bar.png
   /usr/share/doc/HTML/nl/amarok/equalizer.png
   /usr/share/doc/HTML/nl/amarok/faq.docbook
   /usr/share/doc/HTML/nl/amarok/feature_guide.docbook
@@ -760,28 +827,74 @@ Files included in the binary package:
   /usr/share/doc/HTML/nl/amarok/pl_tip1.png
   /usr/share/doc/HTML/nl/amarok/play_list.png
   /usr/share/doc/HTML/nl/amarok/player_window.png
+  /usr/share/doc/HTML/nl/amarok/playlist_browser.png
   /usr/share/doc/HTML/nl/amarok/playlist_window.png
   /usr/share/doc/HTML/nl/amarok/plugin.docbook
+  /usr/share/doc/HTML/nl/amarok/queue_manager.png
   /usr/share/doc/HTML/nl/amarok/quick.docbook
   /usr/share/doc/HTML/nl/amarok/requirements.docbook
   /usr/share/doc/HTML/nl/amarok/rmb_menu.png
-  /usr/share/doc/HTML/nl/amarok/search.png
+  /usr/share/doc/HTML/nl/amarok/script_manager.png
   /usr/share/doc/HTML/nl/amarok/status_bar.png
+  /usr/share/doc/HTML/nl/amarok/tab_lyrics.png
+  /usr/share/doc/HTML/nl/amarok/tab_lyrics1.png
+  /usr/share/doc/HTML/nl/amarok/tab_music.png
+  /usr/share/doc/HTML/nl/amarok/tab_wiki.png
   /usr/share/doc/HTML/nl/amarok/using.docbook
   /usr/share/doc/HTML/nl/amarok/vis_window.png
+  /usr/share/doc/HTML/pl/amarok/advanced.docbook
+  /usr/share/doc/HTML/pl/amarok/common
+  /usr/share/doc/HTML/pl/amarok/config.docbook
+  /usr/share/doc/HTML/pl/amarok/faq.docbook
+  /usr/share/doc/HTML/pl/amarok/index.cache.bz2
+  /usr/share/doc/HTML/pl/amarok/index.docbook
+  /usr/share/doc/HTML/pl/amarok/quick.docbook
+  /usr/share/doc/HTML/pl/amarok/requirements.docbook
+  /usr/share/doc/HTML/pl/amarok/using.docbook
+  /usr/share/doc/HTML/pt/amarok/add_dynamic.png
   /usr/share/doc/HTML/pt/amarok/advanced.docbook
+  /usr/share/doc/HTML/pt/amarok/amarok_playlist.png
+  /usr/share/doc/HTML/pt/amarok/analyzer.png
+  /usr/share/doc/HTML/pt/amarok/buttons.png
+  /usr/share/doc/HTML/pt/amarok/collection.png
   /usr/share/doc/HTML/pt/amarok/common
   /usr/share/doc/HTML/pt/amarok/config.docbook
+  /usr/share/doc/HTML/pt/amarok/config_appearance.png
+  /usr/share/doc/HTML/pt/amarok/config_collection.png
+  /usr/share/doc/HTML/pt/amarok/config_engine.png
+  /usr/share/doc/HTML/pt/amarok/config_general.png
+  /usr/share/doc/HTML/pt/amarok/config_osd.png
+  /usr/share/doc/HTML/pt/amarok/config_playback.png
+  /usr/share/doc/HTML/pt/amarok/config_scrobbler.png
+  /usr/share/doc/HTML/pt/amarok/coverman.png
   /usr/share/doc/HTML/pt/amarok/develop.docbook
+  /usr/share/doc/HTML/pt/amarok/dynamic_bar.png
+  /usr/share/doc/HTML/pt/amarok/dynamic_settings.png
+  /usr/share/doc/HTML/pt/amarok/equalizer.png
   /usr/share/doc/HTML/pt/amarok/faq.docbook
   /usr/share/doc/HTML/pt/amarok/feature_guide.docbook
+  /usr/share/doc/HTML/pt/amarok/file_browser.png
   /usr/share/doc/HTML/pt/amarok/hidden.docbook
   /usr/share/doc/HTML/pt/amarok/index.cache.bz2
   /usr/share/doc/HTML/pt/amarok/index.docbook
+  /usr/share/doc/HTML/pt/amarok/logo.png
+  /usr/share/doc/HTML/pt/amarok/media_device.png
+  /usr/share/doc/HTML/pt/amarok/menubar.png
+  /usr/share/doc/HTML/pt/amarok/musicbrainz.png
+  /usr/share/doc/HTML/pt/amarok/pl_tip1.png
+  /usr/share/doc/HTML/pt/amarok/play_list.png
+  /usr/share/doc/HTML/pt/amarok/player_window.png
+  /usr/share/doc/HTML/pt/amarok/playlist_browser.png
+  /usr/share/doc/HTML/pt/amarok/playlist_window.png
   /usr/share/doc/HTML/pt/amarok/plugin.docbook
+  /usr/share/doc/HTML/pt/amarok/queue_manager.png
   /usr/share/doc/HTML/pt/amarok/quick.docbook
   /usr/share/doc/HTML/pt/amarok/requirements.docbook
+  /usr/share/doc/HTML/pt/amarok/rmb_menu.png
+  /usr/share/doc/HTML/pt/amarok/script_manager.png
+  /usr/share/doc/HTML/pt/amarok/status_bar.png
   /usr/share/doc/HTML/pt/amarok/using.docbook
+  /usr/share/doc/HTML/pt/amarok/vis_window.png
   /usr/share/doc/HTML/pt_BR/amarok/advanced.docbook
   /usr/share/doc/HTML/pt_BR/amarok/common
   /usr/share/doc/HTML/pt_BR/amarok/config.docbook
@@ -875,18 +988,20 @@ Files included in the binary package:
   /usr/share/doc/HTML/sv/amarok/using.docbook
   /usr/share/doc/HTML/sv/amarok/vis_window.png
   /usr/share/doc/HTML/sv/amarok/welcome.png
-  /usr/share/doc/amarok-1.4.1/AUTHORS
-  /usr/share/doc/amarok-1.4.1/COPYING
-  /usr/share/doc/amarok-1.4.1/ChangeLog
-  /usr/share/doc/amarok-1.4.1/INSTALL
-  /usr/share/doc/amarok-1.4.1/README
-  /usr/share/doc/amarok-1.4.1/TODO
+  /usr/share/doc/amarok-1.4.3/AUTHORS
+  /usr/share/doc/amarok-1.4.3/COPYING
+  /usr/share/doc/amarok-1.4.3/ChangeLog
+  /usr/share/doc/amarok-1.4.3/INSTALL
+  /usr/share/doc/amarok-1.4.3/README
+  /usr/share/doc/amarok-1.4.3/TODO
   /usr/share/icons/hicolor/128x128/apps/amarok.png
   /usr/share/icons/hicolor/16x16/apps/amarok.png
   /usr/share/icons/hicolor/22x22/apps/amarok.png
   /usr/share/icons/hicolor/32x32/apps/amarok.png
   /usr/share/icons/hicolor/48x48/apps/amarok.png
   /usr/share/icons/hicolor/64x64/apps/amarok.png
+  /usr/share/locale/af/LC_MESSAGES/amarok.mo
+  /usr/share/locale/ar/LC_MESSAGES/amarok.mo
   /usr/share/locale/az/LC_MESSAGES/amarok.mo
   /usr/share/locale/bg/LC_MESSAGES/amarok.mo
   /usr/share/locale/br/LC_MESSAGES/amarok.mo
@@ -936,17 +1051,26 @@ Files included in the binary package:
   /usr/share/locale/uz/LC_MESSAGES/amarok.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/amarok.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/amarok.mo
+  /usr/share/services/amarok_daap-mediadevice.desktop
   /usr/share/services/amarok_generic-mediadevice.desktop
   /usr/share/services/amarok_ipod-mediadevice.desktop
+  /usr/share/services/amarok_massstorage-device.desktop
+  /usr/share/services/amarok_nfs-device.desktop
+  /usr/share/services/amarok_smb-device.desktop
   /usr/share/services/amarok_void-engine_plugin.desktop
   /usr/share/services/amarok_xine-engine.desktop
-  /usr/share/services/lastfm.protocol
+  /usr/share/services/amarokitpc.protocol
+  /usr/share/services/amaroklastfm.protocol
+  /usr/share/services/amarokpcast.protocol
   /usr/share/servicetypes/amarok_codecinstall.desktop
   /usr/share/servicetypes/amarok_plugin.desktop
 
 ------------------
 
 Port Notes:
+
+----- version 1.4.3-1 -----
+Version bump.
 
 ----- version 1.4.1-1 -----
 Initial release for Cygwin.

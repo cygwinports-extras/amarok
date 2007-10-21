@@ -6,13 +6,13 @@ Runtime requirements:
   cygwin-1.5.24-2
   glib2-2.12.13-1
   kdelibs4-3.5.7-1
-  libGL1-6.5.3-1
+  libGL1-7.0.1-1
   libgpod2-0.5.2-1
-  libmpeg4ip0-1.5.0.1-1
-  libmtp6-0.2.1-1
+  libmp4v2_0-1.6.1-1
+  libmtp6-0.2.2-1
   libsqlite3_0-3.3.17-1
-  libtunepimp5-0.5.0-1
-  libxine1-1.1.7-1
+  libtunepimp5-0.5.3-1
+  libxine1-1.1.8-2
   qt3-3.3.8-3
   ruby-1.8.6-1
   taglib-1.4-1
@@ -23,7 +23,7 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.3.5-1
+  cygport-0.3.6-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
@@ -43,15 +43,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack amarok-1.4.6-X-src.tar.bz2
+  unpack amarok-1.4.7-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./amarok-1.4.6-X.cygport all
+  cygport ./amarok-1.4.7-X.cygport all
 
 This will create:
-  /usr/src/amarok-1.4.6-X-src.tar.bz2
-  /usr/src/amarok-1.4.6-X.tar.bz2
+  /usr/src/amarok-1.4.7-X-src.tar.bz2
+  /usr/src/amarok-1.4.7-X.tar.bz2
 
 -------------------------------------------
 
@@ -1120,6 +1120,12 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.4.7-2 -----
+Rebuilt for updated dependencies.
+
+----- version 1.4.7-1 -----
+Version bump.
 
 ----- version 1.4.6-1 -----
 Version bump; fixed ruby http11 extension.

@@ -9,7 +9,7 @@ Runtime requirements:
   libGL1-7.0.1-1
   libgpod2-0.5.2-1
   libmp4v2_0-1.6.1-1
-  libmtp6-0.2.2-1
+  libmtp7-0.2.3-1
   libsqlite3_0-3.3.17-1
   libtunepimp5-0.5.3-1
   libxine1-1.1.8-2

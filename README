@@ -3,33 +3,33 @@ amarok
 KDE music player
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  glib2-2.12.13-1
-  kdelibs4-3.5.7-1
-  libGL1-7.0.1-1
-  libgpod2-0.5.2-1
+  cygwin-1.5.25-7
+  glib2-2.14.4-1
+  kdelibs4-3.5.8-2
+  libGL1-7.0.2-1
+  libgpod3-0.6.0-1
   libmp4v2_0-1.6.1-1
-  libmtp7-0.2.3-1
-  libsqlite3_0-3.3.17-1
+  libmtp7-0.2.4-1
+  libsqlite3_0-3.5.3-1
   libtunepimp5-0.5.3-1
   libxine1-1.1.8-2
-  qt3-3.3.8-3
+  qt3-3.3.8-4
   ruby-1.8.6-1
-  taglib-1.4-1
+  taglib-1.4-2
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.24-2
+  cygwin-1.5.25-7
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.3.6-1
+  cygport-0.3.7-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
   libtool1.5-1.5.23a-2
   make-3.81-1
-  perl-5.8.7-5
+  perl-5.8.8-4
   pkg-config-0.21-1
   sed-4.1.5-2
 
@@ -43,15 +43,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack amarok-1.4.7-X-src.tar.bz2
+  unpack amarok-1.4.8-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./amarok-1.4.7-X.cygport all
+  cygport ./amarok-1.4.8-X.cygport all
 
 This will create:
-  /usr/src/amarok-1.4.7-X-src.tar.bz2
-  /usr/src/amarok-1.4.7-X.tar.bz2
+  /usr/src/amarok-1.4.8-X-src.tar.bz2
+  /usr/src/amarok-1.4.8-X.tar.bz2
 
 -------------------------------------------
 
@@ -604,7 +604,6 @@ Files included in the binary package:
   /usr/share/config.kcfg/amarok.kcfg
   /usr/share/config.kcfg/xinecfg.kcfg
   /usr/share/config/amarokrc
-  /usr/share/doc/Cygwin/amarok-1.4.7.README
   /usr/share/doc/HTML/da/amarok/advanced.docbook
   /usr/share/doc/HTML/da/amarok/common
   /usr/share/doc/HTML/da/amarok/config.docbook
@@ -656,17 +655,17 @@ Files included in the binary package:
   /usr/share/doc/HTML/de/amarok/status_bar.png
   /usr/share/doc/HTML/de/amarok/using.docbook
   /usr/share/doc/HTML/de/amarok/vis_window.png
-  /usr/share/doc/HTML/en/amarok-1.4.7-apidocs/doxygen.css
-  /usr/share/doc/HTML/en/amarok-1.4.7-apidocs/doxygen.png
-  /usr/share/doc/HTML/en/amarok-1.4.7-apidocs/favicon.ico
-  /usr/share/doc/HTML/en/amarok-1.4.7-apidocs/index.html
-  /usr/share/doc/HTML/en/amarok-1.4.7-apidocs/installdox-slow
-  /usr/share/doc/HTML/en/amarok-1.4.7-apidocs/kde_gear_64.png
-  /usr/share/doc/HTML/en/amarok-1.4.7-apidocs/subdirs
-  /usr/share/doc/HTML/en/amarok-1.4.7-apidocs/tab_b.gif
-  /usr/share/doc/HTML/en/amarok-1.4.7-apidocs/tab_l.gif
-  /usr/share/doc/HTML/en/amarok-1.4.7-apidocs/tab_r.gif
-  /usr/share/doc/HTML/en/amarok-1.4.7-apidocs/tabs.css
+  /usr/share/doc/HTML/en/amarok-1.4.8-apidocs/doxygen.css
+  /usr/share/doc/HTML/en/amarok-1.4.8-apidocs/doxygen.png
+  /usr/share/doc/HTML/en/amarok-1.4.8-apidocs/favicon.ico
+  /usr/share/doc/HTML/en/amarok-1.4.8-apidocs/index.html
+  /usr/share/doc/HTML/en/amarok-1.4.8-apidocs/installdox-slow
+  /usr/share/doc/HTML/en/amarok-1.4.8-apidocs/kde_gear_64.png
+  /usr/share/doc/HTML/en/amarok-1.4.8-apidocs/subdirs
+  /usr/share/doc/HTML/en/amarok-1.4.8-apidocs/tab_b.gif
+  /usr/share/doc/HTML/en/amarok-1.4.8-apidocs/tab_l.gif
+  /usr/share/doc/HTML/en/amarok-1.4.8-apidocs/tab_r.gif
+  /usr/share/doc/HTML/en/amarok-1.4.8-apidocs/tabs.css
   /usr/share/doc/HTML/en/amarok/add_dynamic.png
   /usr/share/doc/HTML/en/amarok/advanced.docbook
   /usr/share/doc/HTML/en/amarok/amarok_playlist.png
@@ -1023,14 +1022,14 @@ Files included in the binary package:
   /usr/share/doc/HTML/sv/amarok/using.docbook
   /usr/share/doc/HTML/sv/amarok/vis_window.png
   /usr/share/doc/HTML/sv/amarok/welcome.png
-  /usr/share/doc/amarok-1.4.7/AUTHORS
-  /usr/share/doc/amarok-1.4.7/COPYING
-  /usr/share/doc/amarok-1.4.7/COPYING-DOCS
-  /usr/share/doc/amarok-1.4.7/COPYING.LIB
-  /usr/share/doc/amarok-1.4.7/ChangeLog
-  /usr/share/doc/amarok-1.4.7/INSTALL
-  /usr/share/doc/amarok-1.4.7/README
-  /usr/share/doc/amarok-1.4.7/TODO
+  /usr/share/doc/amarok-1.4.8/AUTHORS
+  /usr/share/doc/amarok-1.4.8/COPYING
+  /usr/share/doc/amarok-1.4.8/COPYING-DOCS
+  /usr/share/doc/amarok-1.4.8/COPYING.LIB
+  /usr/share/doc/amarok-1.4.8/ChangeLog
+  /usr/share/doc/amarok-1.4.8/INSTALL
+  /usr/share/doc/amarok-1.4.8/README
+  /usr/share/doc/amarok-1.4.8/TODO
   /usr/share/icons/hicolor/128x128/apps/amarok.png
   /usr/share/icons/hicolor/16x16/apps/amarok.png
   /usr/share/icons/hicolor/22x22/apps/amarok.png
@@ -1120,6 +1119,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.4.8-1 -----
+Version bump.
 
 ----- version 1.4.7-2 -----
 Rebuilt for updated dependencies.

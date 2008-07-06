@@ -1,0 +1,14 @@
+inherit kde3
+
+DESCRIPTION="KDE music player"
+HOMEPAGE="http://amarok.kde.org/"
+PATCH_URI="mirror://portage/media-sound/${PN}/files/${P}-libmtp-0.3.0-API.patch"
+
+# amarok_libvisual link fails with undef ref to WinMain@16
+CYGCONF_ARGS="
+	--without-included-sqlite
+	--with-mp4v2
+	--with-libgpod
+	--with-musicbrainz
+	--without-libvisual
+"

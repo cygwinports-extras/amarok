@@ -9,10 +9,10 @@ Runtime requirements:
   libGL1-7.0.3-1
   libgpod3-0.6.0-1
   libmp4v2_0-1.6.1-2
-  libmtp7-0.2.6.1-1
+  libmtp8-0.3.0-1
   libsqlite3_0-3.5.9-1
-  libtunepimp5-0.5.3-1
-  libxine1-1.1.13-1
+  libtunepimp5-0.5.3-2
+  libxine1-1.1.14-1
   qt3-3.3.8-4
   ruby-1.8.6_p114-2
   taglib-1.5-1
@@ -22,7 +22,7 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.10-1.10.1-1
   binutils-20080523-1
-  cygport-0.3.11-1
+  cygport-0.3.12-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
@@ -1118,6 +1118,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.4.9.1-2 -----
+Patch from Gentoo for libmtp-0.3.0.
 
 ----- version 1.4.9.1-1 -----
 Version bump.

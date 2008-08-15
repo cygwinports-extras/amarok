@@ -4,7 +4,7 @@ KDE music player
 
 Runtime requirements:
   cygwin-1.5.25-15
-  glib2-2.16.3-1
+  glib2-2.16.4-1
   kdelibs4-3.5.9-1
   libGL1-7.0.3-1
   libgpod3-0.6.0-1
@@ -12,23 +12,23 @@ Runtime requirements:
   libmtp8-0.3.0-1
   libsqlite3_0-3.5.9-1
   libtunepimp5-0.5.3-2
-  libxine1-1.1.14-1
+  libxine1-1.1.15-1
   qt3-3.3.8-4
-  ruby-1.8.6_p114-2
+  ruby-1.8.7_p72-1
   taglib-1.5-1
 
 Build requirements:
 (besides corresponding devel packages)
   autoconf2.5-2.61-1
   automake1.10-1.10.1-1
-  binutils-20080523-1
+  binutils-20080524-2
   cygport-0.3.12-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
   libtool-2.2.2-2
   make-3.81-1
-  perl-5.10.0-4
+  perl-5.10.0-5
   pkg-config-0.23a-2
   sed-4.1.5-2
 
@@ -42,15 +42,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack amarok-1.4.9.1-X-src.tar.bz2
+  unpack amarok-1.4.10-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./amarok-1.4.9.1-X.cygport all
+  cygport ./amarok-1.4.10-X.cygport all
 
 This will create:
-  /usr/src/amarok-1.4.9.1-X-src.tar.bz2
-  /usr/src/amarok-1.4.9.1-X.tar.bz2
+  /usr/src/amarok-1.4.10-X-src.tar.bz2
+  /usr/src/amarok-1.4.10-X.tar.bz2
 
 -------------------------------------------
 
@@ -654,17 +654,17 @@ Files included in the binary package:
   /usr/share/doc/HTML/de/amarok/status_bar.png
   /usr/share/doc/HTML/de/amarok/using.docbook
   /usr/share/doc/HTML/de/amarok/vis_window.png
-  /usr/share/doc/HTML/en/amarok-1.4.9.1-apidocs/doxygen.css
-  /usr/share/doc/HTML/en/amarok-1.4.9.1-apidocs/doxygen.png
-  /usr/share/doc/HTML/en/amarok-1.4.9.1-apidocs/favicon.ico
-  /usr/share/doc/HTML/en/amarok-1.4.9.1-apidocs/index.html
-  /usr/share/doc/HTML/en/amarok-1.4.9.1-apidocs/installdox-slow
-  /usr/share/doc/HTML/en/amarok-1.4.9.1-apidocs/kde_gear_64.png
-  /usr/share/doc/HTML/en/amarok-1.4.9.1-apidocs/subdirs
-  /usr/share/doc/HTML/en/amarok-1.4.9.1-apidocs/tab_b.gif
-  /usr/share/doc/HTML/en/amarok-1.4.9.1-apidocs/tab_l.gif
-  /usr/share/doc/HTML/en/amarok-1.4.9.1-apidocs/tab_r.gif
-  /usr/share/doc/HTML/en/amarok-1.4.9.1-apidocs/tabs.css
+  /usr/share/doc/HTML/en/amarok-1.4.10-apidocs/doxygen.css
+  /usr/share/doc/HTML/en/amarok-1.4.10-apidocs/doxygen.png
+  /usr/share/doc/HTML/en/amarok-1.4.10-apidocs/favicon.ico
+  /usr/share/doc/HTML/en/amarok-1.4.10-apidocs/index.html
+  /usr/share/doc/HTML/en/amarok-1.4.10-apidocs/installdox-slow
+  /usr/share/doc/HTML/en/amarok-1.4.10-apidocs/kde_gear_64.png
+  /usr/share/doc/HTML/en/amarok-1.4.10-apidocs/subdirs
+  /usr/share/doc/HTML/en/amarok-1.4.10-apidocs/tab_b.gif
+  /usr/share/doc/HTML/en/amarok-1.4.10-apidocs/tab_l.gif
+  /usr/share/doc/HTML/en/amarok-1.4.10-apidocs/tab_r.gif
+  /usr/share/doc/HTML/en/amarok-1.4.10-apidocs/tabs.css
   /usr/share/doc/HTML/en/amarok/add_dynamic.png
   /usr/share/doc/HTML/en/amarok/advanced.docbook
   /usr/share/doc/HTML/en/amarok/amarok_playlist.png
@@ -1021,14 +1021,14 @@ Files included in the binary package:
   /usr/share/doc/HTML/sv/amarok/using.docbook
   /usr/share/doc/HTML/sv/amarok/vis_window.png
   /usr/share/doc/HTML/sv/amarok/welcome.png
-  /usr/share/doc/amarok-1.4.9.1/AUTHORS
-  /usr/share/doc/amarok-1.4.9.1/COPYING
-  /usr/share/doc/amarok-1.4.9.1/COPYING-DOCS
-  /usr/share/doc/amarok-1.4.9.1/COPYING.LIB
-  /usr/share/doc/amarok-1.4.9.1/ChangeLog
-  /usr/share/doc/amarok-1.4.9.1/INSTALL
-  /usr/share/doc/amarok-1.4.9.1/README
-  /usr/share/doc/amarok-1.4.9.1/TODO
+  /usr/share/doc/amarok-1.4.10/AUTHORS
+  /usr/share/doc/amarok-1.4.10/COPYING
+  /usr/share/doc/amarok-1.4.10/COPYING-DOCS
+  /usr/share/doc/amarok-1.4.10/COPYING.LIB
+  /usr/share/doc/amarok-1.4.10/ChangeLog
+  /usr/share/doc/amarok-1.4.10/INSTALL
+  /usr/share/doc/amarok-1.4.10/README
+  /usr/share/doc/amarok-1.4.10/TODO
   /usr/share/icons/hicolor/128x128/apps/amarok.png
   /usr/share/icons/hicolor/16x16/apps/amarok.png
   /usr/share/icons/hicolor/22x22/apps/amarok.png
@@ -1118,6 +1118,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.4.10-1 -----
+Version bump.
 
 ----- version 1.4.9.1-2 -----
 Patch from Gentoo for libmtp-0.3.0.

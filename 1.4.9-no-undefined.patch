@@ -1,0 +1,23 @@
+--- origsrc/amarok-1.4.9.1/amarok/src/Makefile.am	2008-04-10 15:16:37.000000000 -0500
++++ src/amarok-1.4.9.1/amarok/src/Makefile.am	2008-07-05 23:45:34.234375000 -0500
+@@ -165,6 +165,7 @@
+ 
+ libamarok_la_LDFLAGS = \
+     $(all_libraries) \
++	-no-undefined \
+     $(KDE_RPATH)
+ 
+ METASOURCES = \
+@@ -189,12 +190,7 @@
+ amarokapp_SOURCES = main.cpp
+ 
+ amarokapp_LDADD = \
+-    $(top_builddir)/amarok/src/amarokcore/libamarokcore.la \
+     libamarok.la \
+-    $(top_builddir)/amarok/src/analyzers/libanalyzers.la \
+-    $(top_builddir)/amarok/src/plugin/libplugin.la \
+-    $(top_builddir)/amarok/src/statusbar/libstatusbar.la \
+-    $(top_builddir)/amarok/src/metadata/libmetadata.la \
+     $(LIB_KUTILS) $(LIB_KFILE) $(LIB_KDEUI) $(LIB_KDECORE) $(LIB_KHTML) $(LIB_KNEWSTUFF) \
+     $(TAGLIB_LIBS) $(gl_libs) $(LIB_SQLITE) $(LIB_SQLITE_LOCAL) $(EXSCALIBAR_LIBS) \
+     $(LIB_TUNEPIMP) \

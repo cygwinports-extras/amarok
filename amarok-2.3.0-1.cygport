@@ -1,6 +1,9 @@
 inherit kde4
 
-
+DESCRIPTION="KDE music player and manager"
 HOMEPAGE="http://amarok.kde.org/"
 
 PATCH_URI="2.3.0-cmake.patch"
+
+# runtime dep only
+CYGCMAKE_ARGS="-DBINDINGS_RUN_RESULT=1"

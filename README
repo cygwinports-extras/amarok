@@ -5,36 +5,36 @@ It makes playing the music you love and discovering new music easier
 than ever before - and it looks good doing it.
 
 Runtime requirements:
-  cygwin-1.7.1-1
+  cygwin-1.7.5-1
   crypt-1.1-1
   libcurl4-7.19.6-1
   libgcc1-4.3.4-3
-  libgcrypt11-1.4.1-4
-  libglib2.0_0-2.22.2-1
-  libkdecore5-4.3.4-1
+  libgcrypt11-1.4.5-1
+  libglib2.0_0-2.22.4-2
+  libkdecore5-4.4.3-1
   liblastfm0-0.3.0-1
   libloudmouth1_0-1.4.3-10
-  libmysqlclient16-5.1.39-1
-  libphonon4-4.3.1-2
-  libplasma3-4.2.4-1
+  libmysqlclient16-5.1.45-1
+  libphonon4-4.4.1-1
+  libplasma3-4.4.3-1
   libqca2-2.0.2-2
-  libQtCore4-4.5.3-2
-  libQtDBus4-4.5.3-2
-  libQtGui4-4.5.3-2
-  libQtNetwork4-4.5.3-2
-  libQtScript4-4.5.3-2
-  libQtSql4-4.5.3-2
-  libQtSvg4-4.5.3-2
-  libQtWebKit4-4.5.3-2
-  libQtXml4-4.5.3-2
+  libQtCore4-4.6.2-1
+  libQtDBus4-4.6.2-1
+  libQtGui4-4.6.2-1
+  libQtNetwork4-4.6.2-1
+  libQtScript4-4.6.2-1
+  libQtSql4-4.6.2-1
+  libQtSvg4-4.6.2-1
+  libQtWebKit4-4.6.2-1
+  libQtXml4-4.6.2-1
   libstdc++6-4.3.4-3
-  libstreamanalyzer0-0.7.0-1
-  libstreams0-0.7.0-1
+  libstreamanalyzer0-0.7.2-1
+  libstreams0-0.7.2-1
+  libtag1-1.6.3-1
   libtag-extras1-1.0.1-1
-  libtag1-1.6-1
-  libxml2-2.7.4-1
-  openssl-0.9.8l-2
-  phonon-xine-4.3.1-2
+  libxml2-2.7.7-1
+  openssl-0.9.8n-1
+  phonon-xine-4.4.1-1
   qt4-script-core-0.1.0-1
   qt4-script-gui-0.1.0-1
   qt4-script-network-0.1.0-1
@@ -44,12 +44,12 @@ Runtime requirements:
 
 Build requirements:
 (besides corresponding devel packages)
-  binutils-2.19.51-1
-  cmake-2.8.0-11
-  cygport-0.9.80-1
+  binutils-2.20.51-2
+  cmake-2.8.1-10
+  cygport-0.9.84-1
   gcc4-core-4.3.4-3
   gcc4-g++-4.3.4-3
-  libmysqld-devel-5.1.39-1
+  libmysqld-devel-5.1.45-1
   make-3.81-2
   pkg-config-0.23b-10
 
@@ -62,19 +62,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack amarok-2.2.2-X-src.tar.bz2
+  unpack amarok-2.3.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./amarok-2.2.2-X.cygport all
+  cygport ./amarok-2.3.0-X.cygport all
 
 This will create:
-  /usr/src/amarok-2.2.2-X-src.tar.bz2
-  /usr/src/amarok-2.2.2-X.tar.bz2
+  /usr/src/amarok-2.3.0-X-src.tar.bz2
+  /usr/src/amarok-2.3.0-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 2.3.0-1 -----
+Version bump for KDE 4.4.
 
 ----- version 2.2.2-1 -----
 Initial release for Cygwin 1.7.

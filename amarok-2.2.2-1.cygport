@@ -1,6 +1,0 @@
-inherit kde4
-
-
-HOMEPAGE="http://amarok.kde.org/"
-
-PATCH_URI="2.2.0-cmake.patch"

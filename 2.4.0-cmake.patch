@@ -1,6 +1,6 @@
---- origsrc/amarok-2.3.0/src/collection/sqlcollection/mysqlecollection/CMakeLists.txt
-+++ src/amarok-2.3.0/src/collection/sqlcollection/mysqlecollection/CMakeLists.txt
-@@ -20,10 +20,10 @@ qt4_add_dbus_adaptor( amarok_collection-
+--- origsrc/amarok-2.4.0/src/core-impl/collections/db/sql/mysqlecollection/CMakeLists.txt
++++ src/amarok-2.4.0/src/core-impl/collections/db/sql/mysqlecollection/CMakeLists.txt
+@@ -21,10 +21,10 @@ qt4_add_dbus_adaptor( amarok_collection-
  
  kde4_add_plugin(amarok_collection-mysqlecollection ${amarok_collection-mysqlecollection_PART_SRCS})
  
@@ -13,9 +13,9 @@
  SET(CMAKE_MODULE_LINKER_FLAGS ${CMAKE_MODULE_LINKER_FLAGS_NOFATALWARN} )
  
  target_link_libraries(amarok_collection-mysqlecollection
---- origsrc/amarok-2.3.0/src/collection/sqlcollection/mysqlservercollection/CMakeLists.txt
-+++ src/amarok-2.3.0/src/collection/sqlcollection/mysqlservercollection/CMakeLists.txt
-@@ -20,10 +20,10 @@ qt4_add_dbus_adaptor( amarok_collection-
+--- origsrc/amarok-2.4.0/src/core-impl/collections/db/sql/mysqlservercollection/CMakeLists.txt
++++ src/amarok-2.4.0/src/core-impl/collections/db/sql/mysqlservercollection/CMakeLists.txt
+@@ -21,10 +21,10 @@ qt4_add_dbus_adaptor( amarok_collection-
  
  kde4_add_plugin(amarok_collection-mysqlservercollection ${amarok_collection-mysqlservercollection_PART_SRCS})
  

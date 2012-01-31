@@ -1,5 +1,5 @@
 category: Audio KDE
-requires: libavcodec52 libavformat52 libcurl4 libgcc1 libgcrypt11 libglib2.0_0 libkdecore5 liblastfm0 libloudmouth1_0 libmygpo-qt1 libmysqlclient18 libmysqld0 libofa0 libphonon4 libplasma3 libqjson0 libQtCore4 libQtDBus4 libQtGui4 libQtNetwork4 libQtScript4 libQtSql4 libQtSvg4 libQtWebKit4 libQtXml4 libstdc++6 libtag1 libtag-extras1 libxml2 qt4-script-core qt4-script-gui qt4-script-network qt4-script-uitools qt4-script-xml
+requires: libavcodec52 libavformat52 libcurl4 libgcc1 libgcrypt11 libGL1 libglib2.0_0 libkdecore5 liblastfm0 libloudmouth1_0 libmygpo-qt1 libmysqlclient18 libmysqld0 libofa0 libphonon4 libplasma3 libqjson0 libQtCore4 libQtDBus4 libQtGui4 libQtNetwork4 libQtOpenGL4 libQtScript4 libQtSql4 libQtSvg4 libQtWebKit4 libQtXml4 libstdc++6 libtag1 libtag-extras1 libX11_6 libxml2 qt4-script-core qt4-script-gui qt4-script-network qt4-script-uitools qt4-script-xml
 sdesc: "KDE music player"
 ldesc: "Amarok is a powerful music player for KDE with an intuitive 
 interface. It makes playing the music you love and discovering new music 

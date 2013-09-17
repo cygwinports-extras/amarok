@@ -1,16 +1,17 @@
 inherit kde4
 
 NAME="amarok"
-VERSION=2.7.0
+VERSION=2.8.0
 RELEASE=1
-CATEGORY="Audio KDE"
+CATEGORY="Audio"
 SUMMARY="KDE music player"
 DESCRIPTION="Amarok is a powerful music player for KDE with an intuitive
 interface. It makes playing the music you love and discovering new music
 easier than ever before - and it looks good doing it."
 HOMEPAGE="http://amarok.kde.org/"
 
-REQUIRES="qt4-script-core qt4-script-gui qt4-script-network qt4-script-uitools qt4-script-xml"
+REQUIRES="audiocd-kio clamz qtscriptbindings"
 
-# runtime dep only
-CYGCMAKE_ARGS="-DBINDINGS_RUN_RESULT=1"
+# qtscriptbindings: runtime dep only
+# ffmpeg: only for MusicDNS (playback itself is handled by Phonon)
+CYGCMAKE_ARGS="-DBINDINGS_RUN_RESULT=1 -DWITH_FFmpeg=OFF"

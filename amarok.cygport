@@ -2,7 +2,7 @@ inherit kde4
 
 NAME="amarok"
 VERSION=2.8.0
-RELEASE=2
+RELEASE=3
 CATEGORY="Audio"
 SUMMARY="KDE music player"
 DESCRIPTION="Amarok is a powerful music player for KDE with an intuitive

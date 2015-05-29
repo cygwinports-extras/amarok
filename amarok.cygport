@@ -10,7 +10,7 @@ interface. It makes playing the music you love and discovering new music
 easier than ever before - and it looks good doing it."
 HOMEPAGE="http://amarok.kde.org/"
 
-REQUIRES="audiocd-kio clamz qtscriptbindings"
+REQUIRES="audiocd-kio clamz kde-runtime qtscriptbindings"
 
 # qtscriptbindings: runtime dep only
 # ffmpeg: only for MusicDNS (playback itself is handled by Phonon)

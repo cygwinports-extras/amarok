@@ -1,17 +1,40 @@
 inherit kde4
 
 NAME="amarok"
-VERSION=2.8.0
-RELEASE=3
+VERSION=2.8.90
+RELEASE=1
 CATEGORY="Audio"
 SUMMARY="KDE music player"
 DESCRIPTION="Amarok is a powerful music player for KDE with an intuitive
 interface. It makes playing the music you love and discovering new music
 easier than ever before - and it looks good doing it."
 HOMEPAGE="http://amarok.kde.org/"
+SRC_URI="mirror://kde/stable/amarok/${VERSION}/src/amarok-${VERSION}.tar.xz"
+PATCH_URI="
+	fedora/amarok-2.8.0-onlinedoc.patch
+	fedora/0003-Fix-TagLib-version-check.patch
+	fedora/0009-fix-apparent-obvious-error-typo-in-find_library-MYSQ.patch
+	fedora/0010-Fix-tabs-applet.patch
+	fedora/0012-tabs-applet-Add-missing-to-fix-the-build.patch
+	fedora/0013-Fix-for-the-infinite-loop-in-case-a-home-burned-or-o.patch
+	fedora/0014-Only-link-with-MYSQL_EMBEDDED_LIBRARIES-if-WITH_MYSQ.patch
+	fedora/0015-Fix-a-crash-in-amarok-when-opening-the-Script-Consol.patch
+	fedora/0016-Fix-untranslatable-string.patch
+	fedora/0017-gcc6-buildfix.patch
+	fedora/0019-Disable-non-SSL-connections-in-wikipedia-applet.patch
+	fedora/0020-Wikipedia-applet-Remove-last-trace-of-no-SSL-possibi.patch
+	fedora/0024-Substitute-deprecated-MySQL-option-myisam-recover.patch
+	fedora/0025-Handle-numeric-fields-properly-in-filter-creation-di.patch
+	fedora/0026-Use-transparent-background-for-lyrics-browser.patch
+	fedora/amarok-kdebug365275.patch
+"
 
-REQUIRES="audiocd-kio clamz kde-runtime qtscriptbindings"
+REQUIRES="audiocd-kio kde-runtime qtscriptbindings"
 
 # qtscriptbindings: runtime dep only
 # ffmpeg: only for MusicDNS (playback itself is handled by Phonon)
-CYGCMAKE_ARGS="-DBINDINGS_RUN_RESULT=1 -DWITH_FFmpeg=OFF"
+CYGCMAKE_ARGS="
+	-DBINDINGS_RUN_RESULT=1
+	-DWITH_FFmpeg=OFF
+	-DMYSQLCONFIG_EXECUTABLE:BOOL=OFF
+"
